@@ -14,10 +14,10 @@ choice=int(input(colored('Enter the choice:','blue')))
 if choice!=1 and choice!=2:
     print("Wrong input")
     exit(0)
-main_list=['MOVIE','FRUIT','PROGRAMMING_LANGUAGE']
+main_list=['MOVIE','FRUIT','PROGRAMMING_LANGUAGE']#Main list for shuffle
 random.shuffle(main_list)
 if main_list[0]=='FRUIT':
-    fruit=['APPLE','MANGO','GUAVA','LITCHI','BANANA','ORANGE','COCONUT','BLACKPLUM',]
+    fruit=['APPLE','MANGO','GUAVA','LITCHI','BANANA','ORANGE','COCONUT','BLACKPLUM',]#fruit list for shuffle
     random.shuffle(fruit)
     answer=fruit[1]                 #for printing the answer which is not guess by user
     compiler_answer=list(answer)    #answer for compiler
